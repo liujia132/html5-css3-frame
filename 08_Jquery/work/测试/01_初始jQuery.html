@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /**
+         * jQuery 是一个 JavaScript 库。jQuery 极大地简化了 JavaScript 编程。
+         * write Less do more
+         *
+         */
+        //使用原生DOM实现:
+        window.onload = function () { //绑定文档加载完毕的监听
+            let btn01 = document.getElementById("btn01");
+            btn01.onclick = function () {
+                let username = document.getElementById("username").value;
+                alert(username);
+            };
+        };
+    </script>
+    <!-- 导入jQuery库-->
+    <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+    <script type="text/javascript">
+        //使用jQuery实现：
+        //页面代码全部加载完毕后并监听
+        $(function () {
+           $('#btn02').click(function () {
+              let username = $('#username').val();
+              alert(username);
+           });
+        });
+    </script>
+    <script type="text/javascript">
+        //页面加载完毕后并监听
+        $(document).ready(function () {
+           $("#btn02").click(function () {
+              let username = $("#username").val();
+               console.log(username);
+           });
+        });
+
+    </script>
+</head>
+<body>
+用户名: <input type="text" id="username">
+<button id="btn01">确定(原生版)</button>
+<button id="btn02">确定(jQuery版)</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button>测试一</button>
+<button>测试二</button>
+<button id="btn3">测试三</button>
+<button>测试四</button>
+
+<!--
+1. jQuery对象是一个包含所有匹配的任意多个dom元素的伪数组对象
+2. 基本行为
+  * size()/length: 包含的DOM元素个数
+  * [index]/get(index): 得到对应位置的DOM元素
+  * each(): 遍历包含的所有DOM元素
+  * index(): 得到在所在兄弟元素中的下标
+-->
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+    /*
+ 需求:
+ 需求1. 统计一共有多少个按钮
+ 需求2. 取出第2个button的文本
+ 需求3. 输出所有button标签的文本
+ 需求4. 输出'测试三'按钮是所有按钮中的第几个
+ */
+    //需求1. 统计一共有多少个按钮
+    let $buttons = $('button');
+    console.log($buttons.size(),$buttons.length);
+    //需求2. 取出第2个button的文本
+    console.log($buttons[1].innerHTML,$buttons.get(1).innerHTML);
+
+    //需求3. 输出所有button标签的文本
+    $buttons.each(function (index,doElm) {
+        console.log(index,doElm.innerHTML,this);
+
+    });
+    // 需求4. 输出'测试三'按钮是所有按钮中的第几个
+    console.log($('#btn3').index());
+
+    /**
+     * 伪数组
+     * Object对象
+     * length 属性
+     * 数组下标属性
+     * 伪数组没有设置的一些属性: forEach() push()  pop() split()  delete()
+     */
+    let weiArr = { };
+    weiArr.length = 0;
+    weiArr[0] = "liuqiang132";
+    weiArr.length = 1;
+    weiArr[1] = "xieluyao132";
+    weiArr.length = 2;
+    for (let i = 0; i < weiArr.length; i++) {
+        let obj = weiArr[i];
+        console.log(i, obj);
+    }
+
+    console.log(weiArr.forEach,$buttons.forEach); //undefined    undefined
+
+
+</script>
+
+</body>
+</html>

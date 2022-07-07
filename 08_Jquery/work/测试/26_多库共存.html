@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        .div1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            left: 10px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+问题 : 如果有2个库都有$, 就存在冲突
+解决 : jQuery库可以释放$的使用权, 让另一个库可以正常使用, 此时jQuery库只能使用jQuery了
+API : jQuery.noConflict()
+-->
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+    //释放jQuery的权利
+    jQuery.noConflict();
+    //这时只能用jQuery，而不能用$
+    jQuery(function () {
+        console.log("文档加载完成");
+    });
+    console.log("++++++++++++")
+
+</script>
+
+</body>
+</html>

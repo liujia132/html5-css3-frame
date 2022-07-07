@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习2_添加删除记录</title>
+    <link rel="stylesheet" type="text/css" href="css.css"/>
+</head>
+<body>
+<table id="employeeTable">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>&nbsp;</th>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>tom@tom.com</td>
+        <td>5000</td>
+        <td><a href="deleteEmp?id=001">Delete</a></td>
+    </tr>
+    <tr>
+        <td>Jerry</td>
+        <td>jerry@sohu.com</td>
+        <td>8000</td>
+        <td><a href="deleteEmp?id=002">Delete</a></td>
+    </tr>
+    <tr>
+        <td>Bob</td>
+        <td>bob@tom.com</td>
+        <td>10000</td>
+        <td><a href="deleteEmp?id=003">Delete</a></td>
+    </tr>
+
+</table>
+
+<div id="formDiv">
+
+    <h4>添加新员工</h4>
+    <table>
+        <tr>
+            <td class="word">name:</td>
+            <td class="inp">
+                <input type="text" name="empName" id="empName"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="word">email:</td>
+            <td class="inp">
+                <input type="text" name="email" id="email"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="word">salary:</td>
+            <td class="inp">
+                <input type="text" name="salary" id="salary"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button id="addEmpButton" value="abc">
+                    Submit
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="../js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+    //1.添加记录
+    $('#addEmpButton').click(function () {
+        //1.收集输入的数据
+        let $empName = $('#empName');
+        let $email = $('#email');
+        let $salary = $('#salary');
+        let empName = $empName.val();
+        let email = $email.val();
+        let salary = $salary.val();
+        //2.生成对应的<tr>标签,并添加到#employeeTable>tbody中
+        /**
+         * <tr>
+         <td>Bob</td>
+         <td>bob@tom.com</td>
+         <td>10000</td>
+         <td><a href="deleteEmp?id=003">Delete</a></td>
+         </tr>
+         */
+        $('<tr></tr>')
+            .append('<td>'+empName+'</td>')
+            .append('<td>'+email+'</td>')
+            .append('<td>'+salary+'</td>')
+            .append('<td><a href="deleteEmp?id="'+Date.now()+'>Delete</a></td>').appendTo("#employeeTable>tbody");
+
+        //清除数据
+        $empName.val('');
+        $email.val('');
+        $salary.val('');
+    });
+    //2.通过tbale对a的click事件的委托
+    $('#employeeTable').delegate('a','click',deleteClick);
+        function deleteClick() {
+            let $tr = $(this).parent().parent();
+            let name = $tr.children(':first').html();
+            //判断点击的按钮
+            if (confirm("确定要删除" + name + "吗？")) {
+                $tr.remove();
+            }
+            //清除默认格式
+            return false;
+        }
+</script>
+
+</body>
+</html>

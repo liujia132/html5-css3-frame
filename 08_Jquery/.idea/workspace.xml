@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="122bd841-6379-4b62-8a43-d2379ab52a0b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML4 File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ATvdEEbMwtUWsSaHRo6Y9NoFWt" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/work/插件/laydate" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\插件\laydate" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\插件\jquery-ui\jquery-ui-test" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\插件" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\练习\常见效果" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\练习\练习3_轮播图\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\插件\laydate" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\插件\jquery-ui" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\练习\常见效果" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\测试\js" />
+      <recent name="C:\Users\liuqiang132\Desktop\Jquery\work\测试" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.demo.html">
+    <configuration name="26_多库共存.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Jquery/work/测试/26_多库共存.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="27_onload和ready的区别.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Jquery/work/测试/27_onload和ready的区别.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="demo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Jquery/work/插件/laydate/laydate-v1.1/demo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Jquery/work/插件/jquery-ui-1.11.4/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Jquery/work/插件/jquery-ui/jquery-ui-test/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.demo.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.27_onload和ready的区别.html" />
+        <item itemvalue="JavaScript Debug.26_多库共存.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="122bd841-6379-4b62-8a43-d2379ab52a0b" name="Default Changelist" comment="" />
+      <created>1655046474487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655046474487</updated>
+      <workItem from="1655046475600" duration="2686000" />
+      <workItem from="1655087306797" duration="7989000" />
+      <workItem from="1655115470725" duration="57000" />
+      <workItem from="1655115531343" duration="36000" />
+      <workItem from="1655115580894" duration="1399000" />
+      <workItem from="1655191386415" duration="1145000" />
+      <workItem from="1655267395933" duration="11379000" />
+      <workItem from="1655876538685" duration="142000" />
+      <workItem from="1655905890797" duration="2338000" />
+      <workItem from="1655946453075" duration="10630000" />
+      <workItem from="1655959441396" duration="8000" />
+      <workItem from="1655965432571" duration="20791000" />
+      <workItem from="1655987004397" duration="8028000" />
+      <workItem from="1655999958888" duration="945000" />
+      <workItem from="1656034979822" duration="13078000" />
+      <workItem from="1656051791151" duration="290000" />
+      <workItem from="1656062447584" duration="22000" />
+      <workItem from="1656086105606" duration="447000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

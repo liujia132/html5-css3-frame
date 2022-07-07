@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+    <script type="text/javascript">
+        //页面加载完毕后的监听
+        $(function () {
+            //功能一: 点击按钮，输出一个按钮的内容,并且显示新的文本框
+            // 参数为函数: 当DOM加载完成后，执行此回调函数
+            $('#btn01').click(function () {
+
+            // * 参数为DOM对象: 将dom对象封装称jQuery对象
+                alert($(this).html());
+                //向div中添加一个新的div
+                // 参数为html标签字符串(用得少)： 创建标签对象并封装称jQuery对象
+                $('<input type="text" name="username"><br/>').appendTo('div');
+
+            });
+
+            //功能二: 遍历数组中的所有元素值 : $.each 隐式遍历数组
+            let arr = [1,2,3,4,5,5,6,7,7,8,9,10];
+            $.each(arr,function (index,item) {
+                console.log(index+"------->"+item);
+
+            });
+
+            //功能三: 去掉 "  atguigu  "的两端的空格
+            //$.trim(): 去除两端的空格
+            var str = "  atguigu ";
+            console.log("-----"+str.trim()+"---------");
+            console.log("-----"+$.trim(str)+"-------");
+        });
+    </script>
+
+</head>
+<body>
+<!--
+ 1.作为一般函数调用: $(param)
+    * 参数为函数: 当DOM加载完成后，执行此回调函数
+    * 参数为选择器字符串: 查找所有匹配的标签，并将它们封装称jQuery对象
+    * 参数为DOM对象: 将dom对象封装称jQuery对象
+    * 参数为html标签字符串(用得少)： 创建标签对象并封装称jQuery对象
+
+
+ 2.作为对象使用: $.xxx()
+    * $.each(): 隐式遍历数组
+    * $.trim(): 去除两端的空格
+ -->
+
+<div>
+    <button id="btn01">测试</button>
+    <br/>
+    <input type="text" name="username"><br/>
+    <input type="text" name="username"><br/>
+</div>
+</body>
+</html>
